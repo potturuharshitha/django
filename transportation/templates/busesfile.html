@@ -1,0 +1,25 @@
+<html>
+    <title>BusInfo</title>
+    <body>
+        <table border="1">
+            <thead>
+                
+                <td>Bus ID</td>
+                <td>Bus Route</td>
+                
+
+                
+                
+                
+            </thead>
+            <tbody>
+                {% for route in routes %}
+                <tr>
+                    <td>{{ route.id }}</td>
+                    <td>{{ route.area }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+            
+    </body>
+</html>
